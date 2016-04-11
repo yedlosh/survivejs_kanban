@@ -16,6 +16,10 @@ body {
   vertical-align: top;
 }
 
+.lane:hover {
+  transition: 0.6s;
+}
+
 .lane-header {
   overflow: auto;
 
