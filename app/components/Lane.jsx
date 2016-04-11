@@ -50,7 +50,9 @@ export default class Lane extends React.Component {
     const dragSource = lane.editing ? a => a : connectDragSource;
 
     return dragSource(connectDropTarget(
-      <div {...props} opacity = {isDragging ? 0 : 1}>
+      <div style={{
+        opacity: isDragging ? 0 : 1
+      }} {...props}>
         <div className="lane-header" onClick={this.activateLaneEdit}>
           <div className="lane-add-note">
             <button onClick={this.addNote}>+</button>
